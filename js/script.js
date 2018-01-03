@@ -7,6 +7,15 @@
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
   
+  $("#translate").click(function(){
+    var message = $("#input").val();
+    var parrotMessage = pig(message);
+    $("#h4").text(parrotMessage);
+});
+
+function pig(word){
+ return  word + "ay";    
+}
 
 
 
