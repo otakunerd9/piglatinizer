@@ -20,7 +20,14 @@ $( document ).ready(function() {
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
 
 function wordToPigLatin(word){
-  return  word + "ay";    
+  
+  if (word[0]==="a" || word[0]==="e" || word[0]==="i" || word[0]==="o" || word[0]==="u" ){
+    
+  }else{
+    
+  }
+  
+  return  word + "ay";
 }
 
 
@@ -40,7 +47,14 @@ function sentenceToPigLatin(sentence){
   return pigwords;
 };
 
-console.log(sentenceToPigLatin("this is a test"))
+
 	//Loops through all the words in the sentence and transforms each word
 	//It should return a transfromed sentance
 	
+	function pigLatin2 (word) {
+	  
+	 var firstLetter = word.substr();
+	 var suffix = firstLetter + 'ay';
+	}
+	
+var  vowelArray = ["a","e","i","o","u"]
