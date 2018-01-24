@@ -10,7 +10,7 @@ $( document ).ready(function() {
   
   $("#translate").click(function(){
      var message = $("#input").val();
-    var parrotMessage = pig(message);
+    var parrotMessage = wordToPigLatin(message);
     $("#h4").text(parrotMessage);
   })
   
